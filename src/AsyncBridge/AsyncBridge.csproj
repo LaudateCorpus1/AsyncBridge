@@ -41,6 +41,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Threading, Version=1.0.3333.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\TaskParallelLibrary.1.0.3333.0\lib\Net35\System.Threading.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsyncCompatLibExtensions.cs" />
@@ -60,6 +64,7 @@
     <Compile Include="Runtime.CompilerServices\YieldAwaitable.cs" />
     <None Include="AsyncBridgeKey.snk" />
     <None Include="AsyncBridge.nuspec" />
+    <None Include="packages.config" />
     <None Include="readme.txt" />
     <Compile Include="Runtime.CompilerServices\CallerFilePathAttribute.cs" />
     <Compile Include="Runtime.CompilerServices\CallerLineNumberAttribute.cs" />

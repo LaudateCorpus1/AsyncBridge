@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4DAF2690-325F-4B61-A008-4A1182756385}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncBridge.Net35", "src\AsyncBridge.Net35\AsyncBridge.Net35.csproj", "{5E096B1B-2881-429C-977B-76AC58980E2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FF710108-A2A9-4CA2-A49A-6CA9AB166F97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0E3D69B7-00E8-410B-A1D7-6152419AB8D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncBridge.Net35.Tests", "tests\AsyncBridge.Net35.Tests\AsyncBridge.Net35.Tests.csproj", "{51F1734D-A5AA-4C45-8458-EBC56F046549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncTargetingPack.Tests", "tests\AsyncTargetingPack.Tests\AsyncTargetingPack.Tests.csproj", "{D0A9D7E7-DD63-43A8-9891-74E58CC80C8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51F1734D-A5AA-4C45-8458-EBC56F046549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F1734D-A5AA-4C45-8458-EBC56F046549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F1734D-A5AA-4C45-8458-EBC56F046549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F1734D-A5AA-4C45-8458-EBC56F046549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E096B1B-2881-429C-977B-76AC58980E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E096B1B-2881-429C-977B-76AC58980E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E096B1B-2881-429C-977B-76AC58980E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E096B1B-2881-429C-977B-76AC58980E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0A9D7E7-DD63-43A8-9891-74E58CC80C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0A9D7E7-DD63-43A8-9891-74E58CC80C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0A9D7E7-DD63-43A8-9891-74E58CC80C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0A9D7E7-DD63-43A8-9891-74E58CC80C8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51F1734D-A5AA-4C45-8458-EBC56F046549} = {0E3D69B7-00E8-410B-A1D7-6152419AB8D8}
+		{5E096B1B-2881-429C-977B-76AC58980E2B} = {FF710108-A2A9-4CA2-A49A-6CA9AB166F97}
+		{D0A9D7E7-DD63-43A8-9891-74E58CC80C8E} = {0E3D69B7-00E8-410B-A1D7-6152419AB8D8}
+	EndGlobalSection
+EndGlobal

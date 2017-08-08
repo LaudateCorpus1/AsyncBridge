@@ -6,7 +6,7 @@ require 'rake/clean'
 
 DOT_NET_PATH = "#{ENV["SystemRoot"]}\\Microsoft.NET\\Framework\\v4.0.30319"
 NUNIT_EXE = "../packages/NUnit.2.5.10.11092/tools/nunit-console.exe"
-NUGET_EXE = "../packages/NuGet.CommandLine.1.7.0/tools/NuGet.exe"
+NUGET_EXE = "../packages/NuGet.CommandLine.2.1.0/tools/NuGet.exe"
 SOURCE_PATH = ".."
 OUTPUT_PATH = "../output"
 configurations = ["Release"]
@@ -21,7 +21,7 @@ namespace :build do
       
 	desc "Build solutions using MSBuild"
 	task :compile do
-		solutions = FileList["#{SOURCE_PATH}/**/*.sln"]
+		solutions = FileList["#{SOURCE_PATH}/**/*.Net35*.sln"]
 		solutions.each do |solution|
 			configurations.each do |config|
 				sh "#{DOT_NET_PATH}/msbuild.exe /p:Configuration=#{config} #{solution}"
@@ -32,7 +32,7 @@ namespace :build do
 	desc "Package with NuGet"
 	task :pack => [:compile] do
 		mkdir OUTPUT_PATH unless File.exists?(OUTPUT_PATH)
-		specs = FileList["#{SOURCE_PATH}/src/**/*.csproj"]
+		specs = FileList["#{SOURCE_PATH}/src/**/*.Net35*.csproj"]
 		specs.each do |spec|
 			folder = File.dirname(spec)
 			sh "#{NUGET_EXE} pack #{spec} -BasePath #{folder} -OutputDirectory #{OUTPUT_PATH}"

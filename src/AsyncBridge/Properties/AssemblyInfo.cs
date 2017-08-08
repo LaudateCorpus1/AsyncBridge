@@ -29,11 +29,11 @@ using System.Runtime.InteropServices;
 //      Minor: New features, but backwards compatible.
 //      Patch: Backwards compatible bug fixes only.
 //
-[assembly: AssemblyVersion("0.0.0")] // only increment major (breaking changes)
+[assembly: AssemblyVersion("0.2.3333.0")] // only increment major (breaking changes)
 [assembly: AssemblyFileVersion(Metadata.Version)]
 [assembly: AssemblyInformationalVersion(Metadata.Version)]
  
 internal class Metadata
 {
-    internal const string Version = "0.2.0";
+    internal const string Version = "0.2.3333.0";
 }
